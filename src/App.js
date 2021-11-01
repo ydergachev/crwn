@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/header/header';
 import HomePage from './pages/home_page/home_page';
 import ShopPage from './pages/shop_page/shop_page';
+import AuthPage from './pages/auth/auth';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
@@ -20,6 +21,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={HomePage}/>
           <Route exact path='/shop'  component={ShopPage}/>
+          <Route exact path='/auth' component={AuthPage}/>
           {/* <Route exact path='/order/:orderId' component={OrderDetailPage}/> */}
         </Switch>
       </BrowserRouter>
